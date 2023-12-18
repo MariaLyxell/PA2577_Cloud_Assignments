@@ -170,7 +170,6 @@ class CloneDetector {
                 }
                 if (!found)
                 {
-                    // console.log("Found one unique... \n%s", clone);
                     uniqueExpandedClones.push(clone);
                 }
             }
@@ -198,7 +197,6 @@ class CloneDetector {
                     // If it isn't new, update the existing clone to include this one too
                     // using Clone::addTarget()
                     y.addTarget(c)
-                    
                 }
                 else
                 {
