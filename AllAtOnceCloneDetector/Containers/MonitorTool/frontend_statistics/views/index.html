@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html ng-app="cljstatistics">
+  <head>
+    <meta charset="utf-8">
+    <title>All at once Clone Detector -- Statistics</title>
+    <base href="/index.html">
+    <meta name = "viewport" content = "width=device-width, initial-scale = 1.0">
+    <meta name="keywords" content="docker-compose, docker, stack">
+    <meta name="author" content="Docker">
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+
+  <body ng-controller="statsCtrl" >
+    
+    <div>
+      <h3>Current Count:</h3>
+      <p>Files count: {{files}}</p>      
+      <p>Chunks count: {{chunks}}</p>      
+      <p>Candidates count: {{candidates}}</p>      
+      <p>Clones count: {{clones}}</p>      
+      <p>Status updates count: {{statusUpdates}}</p>      
+    </div>
+
+
+    <script src="socket.io.js"></script>
+    <script src="angular.min.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
